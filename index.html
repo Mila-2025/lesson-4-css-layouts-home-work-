@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Scandi Living: Möbler, belysning, inredning & design till ditt hem
+    </title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!-- 1️⃣ Navigation (Навигация)
+Назначение: меню сайта, ссылки на разделы. Семантический тег: <nav>    -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#about">Om oss</a></li>
+        <li><a href="#products">Popular Products</a></li>
+        <li><a href="#contact">Kontakta oss</a></li>
+        <li><a href="#footer">Kundservice</a></li>
+      </ul>
+    </nav>
+
+    <!-- 2️⃣ Main (Основной контент страницы)
+Назначение: содержит ВЕСЬ основной контент. Семантический тег: <main>     -->
+    <main>
+      <!-- 3️⃣ Hero Section (Первый экран) Назначение: визуальный первый экран сайта. Семантический тег: <header>       -->
+      <header class="hero">
+        <div class="hero-content">
+          <h1>Scandi Living</h1>
+          <p>Furniture, lighting & timeless Scandinavian design</p>
+        </div>
+      </header>
+
+      <!-- 4️⃣ Products Section (Карточки товаров)Назначение: показать продукты. Семантический тег: <section> -->
+      <section class="products" id="products">
+        <h2>Popular Products</h2>
+        <div class="products-grid">
+          <!-- Дополнительно: <article> для карточек -->
+          <article class="product-card">
+            <img
+              src="images/scandinavian-chair.jpeg"
+              alt="Scandinavian chair"
+            />
+            <h3>Oak Lounge Chair</h3>
+            <p>Timeless Scandinavian design</p>
+          </article>
+
+          <article class="product-card">
+            <img src="images/floor-lamp.jpg" alt="Modern lamp" />
+            <h3>Minimalist Floor Lamp</h3>
+            <p>Soft light for modern homes</p>
+          </article>
+
+          <article class="product-card">
+            <img src="images/wood-table.jpg" alt="Wooden table" />
+            <h3>Solid Wood Table</h3>
+            <p>Natural materials and clean lines</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5️⃣ About Section (О проекте)Назначение: рассказать о бренде / проекте.Семантический тег: <section> -->
+      <section class="about" id="about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Om Scandi Living</h2>
+            <p>
+              Scandi Living erbjuder ett noggrant utvalt sortiment av möbler,
+              belysning och inredning inspirerat av skandinavisk design.
+            </p>
+            <p>
+              Vår vision är att skapa lugna och moderna miljöer där estetik
+              möter komfort.
+            </p>
+            <p>
+              Vi hämtar inspiration från naturen, ljuset och det enkla livet i
+              Norden.
+            </p>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="images/scandinavian-interior.jpg"
+              alt="Scandinavian interior"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 6️⃣ Contact Section (Форма)Назначение: обратная связь. Семантический тег: <section> + <form> -->
+      <section class="contact" id="contact">
+        <h2>Kontakta oss</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input type="text" id="name" placeholder="Ditt namn" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input type="email" id="email" placeholder="Din e-postadress" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Meddelande</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Skriv ditt meddelande här"
+            ></textarea>
+          </div>
+
+          <button type="submit">Skicka meddelande</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- 7️⃣ Footer (Подвал сайта)Назначение: контакты, информация о компании. Семантический тег: <footer> -->
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Kundservice</h3>
+          <p>
+            Har du frågor eller vill veta mer om våra produkter?<br />
+            Du är välkommen att kontakta oss via e-post eller kontaktformuläret
+            på webbplatsen.
+          </p>
+          <p>
+            Vi strävar efter att ge tydlig information och en smidig upplevelse
+            för alla besökare.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Kontaktuppgifter</h3>
+          <p>
+            E-post:
+            <a href="mailto:info@scandiliving.se">info@scandiliving.se</a>
+          </p>
+          <p>Plats: Sverige</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Företagsinformation</h3>
+          <p>Företagsnamn: Scandi Living AB</p>
+          <p>Adress: Stockholm, Sverige</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
